@@ -18,7 +18,6 @@
       update_cache: yes
     when: ansible_distribution == "Ubuntu"
 
-
 - hosts: web_servers
   become: true
   tasks:
