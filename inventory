@@ -9,4 +9,4 @@
 52.170.253.184 ansible_user=azureuser
 
 [workstations]
-localhost ansible_connection=local
+#localhost ansible_connection=local
