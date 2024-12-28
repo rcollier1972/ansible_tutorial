@@ -1,12 +1,12 @@
 [web_servers]
-74.235.244.228 ansible_user=azureuser
-74.235.255.214 ansible_user=azureuser
+74.235.244.228 
+74.235.255.214
 
 [db_servers]
-172.203.167.59 ansible_user=azureuser
+172.203.167.59 
 
 [file_servers] 
-52.170.253.184 ansible_user=azureuser
+52.170.253.184 
 
 [workstations]
 #localhost ansible_connection=local
