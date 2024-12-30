@@ -2,3 +2,13 @@
   authorized_key:
     user: simone
     key: "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIE7puc5J1VxkTeUp09jLRZQHcrksyuPtXJuRVJd8EQcI rcollier1972@DESKTOP-7FGE9NC"
+
+- name: generate sshd_config file from template
+  tags: ssh
+  template:
+    src: "{{ ssh_template_file }}"
+    dest: /etc/ssh/sshd_config
+    owner: root
+    group: root
+    mode: 0644
+  notify: restart_sshd
